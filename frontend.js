@@ -1,4 +1,3 @@
-// FRONTEND: Captura la tarea ingresada y la envía al backend
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("taskForm");
@@ -14,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        // Enviar tarea al backend
         const response = await fetch("http://localhost:3000/addTask", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
