@@ -1,4 +1,3 @@
-// BACKEND: Recibe la tarea, la valida y la guarda
 
 const express = require("express");
 const cors = require("cors");
@@ -10,7 +9,6 @@ app.use(express.json());
 
 const database = require("./baseDeDatos");
 
-// Ruta para agregar tarea
 app.post("/addTask", (req, res) => {
     const { task } = req.body;
 
