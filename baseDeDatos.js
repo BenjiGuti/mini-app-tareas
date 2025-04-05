@@ -1,4 +1,3 @@
-// BASE DE DATOS SIMULADA: Guarda las tareas en una lista
 
 let tasks = [];
 
